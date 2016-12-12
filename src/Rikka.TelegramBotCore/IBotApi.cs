@@ -30,7 +30,7 @@ namespace TelegramBotCore
 
         public string Method(string method)
         {
-            return "https://api.telegram.org/bot{_token}/{method}";
+            return $"https://api.telegram.org/bot{_token}/{method}";
         }
 
 
