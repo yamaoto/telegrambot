@@ -63,10 +63,8 @@ namespace TelegramBotCore
                 var json = JsonConvert.SerializeObject(data, new JsonSerializerSettings() { NullValueHandling = NullValueHandling.Ignore });
                 var buffer = Encoding.UTF8.GetBytes(json);
                 var client = new HttpClient();
-                client.DefaultRequestHeaders
-                    .Accept
-                    .Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                var request = new HttpRequestMessage(HttpMethod.Post, url) {Content = new StringContent(json)};
+
+                var request = new HttpRequestMessage(HttpMethod.Post, url) {Content = new StringContent(json,Encoding.UTF8, "application/json") };
                 var response = await client.SendAsync(request);
                 return await response.Content.ReadAsStringAsync();
             }
