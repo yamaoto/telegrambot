@@ -1,11 +1,14 @@
 ﻿{
-  "name":"Rikka.TelegramBotCore",
+  "name": "Rikka.TelegramBotCore",
   "version": "0.0.1",
   "dependencies": {
     "NETStandard.Library": "1.6.0",
     "Rikka.TelegamClasses": "0.0.1"
   },
-
+  "packOptions": {
+    "projectUrl": "https://bitbucket.org/mikhailovav/telegrambot/",
+    "summary": "Special patter to create Telegram Bot",
+  },
   "frameworks": {
     "netcoreapp1.0": {
       "imports": [

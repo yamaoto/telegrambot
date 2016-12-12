@@ -1,9 +1,13 @@
 ﻿{
-  "name":"Rikka.TelegamClasses",
+  "name": "Rikka.TelegamClasses",
   "version": "0.0.1",
   "dependencies": {
     "NETStandard.Library": "1.6.0",
     "Newtonsoft.Json": "*"
+  },
+  "packOptions": {
+    "projectUrl": "https://bitbucket.org/mikhailovav/telegrambot/",
+    "summary": "Basic Telegram Bot Api classes"
   },
   "frameworks": {
     "netcoreapp1.0": {
