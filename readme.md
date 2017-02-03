@@ -4,9 +4,15 @@
 
 Проект содержит классы сообщений Telegram
 
+`Install-Package Rikka.TelegamClasses`
+
 ## Rikka.TelegramBotCore
 
 Проект содержит интерфейсы для построения бота
+
+
+
+`Install-Package Rikka.TelegramBotCore`
 
 
 
